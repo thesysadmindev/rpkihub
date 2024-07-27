@@ -49,6 +49,14 @@ const config: Config = {
   ],
 
   themeConfig: {
+    announcementBar: {
+      id: 'under-development',
+      content:
+        'This website is currently under active development. To contribute, feel free to submit a pull request on our GitHub repository at <a href="https://github.com/thesysadmindev/rpkihub">https://github.com/thesysadmindev/rpkihub</a>!',
+      backgroundColor: '#ffff00',
+      textColor: '#01042e',
+      isCloseable: false,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
