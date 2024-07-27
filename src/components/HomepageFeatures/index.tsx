@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'What is RPKI?',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Resource Public Key Infrastructure (RPKI) is a security framework used to secure the Internet's routing infrastructure. RPKI allows organisations such as Internet Service Providers (ISPs) and network operators to verify the legitimacy of routes advertised on the Internet.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'What are ROAs?',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Route Origin Authorizations (ROAs) are cryptographic objects used in the Resource Public Key Infrastructure (RPKI) framework to specify which Autonomous Systems (AS) are authorized to originate specific IP address space on the Internet.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'What is Route Object Validation?',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Route Object Validation (ROV) refers to the process of validating routing information using external databases or repositories to verify the legitimacy of route announcements on the Internet. This validation helps ensure that routing information is accurate and originates from authorised entities, thereby enhancing the security and reliability of Internet routing.
       </>
     ),
   },

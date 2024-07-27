@@ -1,0 +1,8 @@
+{
+  "label": "How-To Guides - Creating ROAs",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "This section details how you would create your Route Origin Authorisations at the Regional Internet Registries (RIRs) as well as on your self-hosted RPKI Certificate Authority server."
+  }
+}

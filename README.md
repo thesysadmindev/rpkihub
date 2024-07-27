@@ -1,6 +1,6 @@
-# Ready to ROA!
+# RPKI Deployment Hub
 
-ReadyToROA.au is a site designed to help network operators deploy Route Origin Authorisation and configure Route Object Validation on their networks.
+rpkihub.au is a site designed to help network operators deploy Route Origin Authorisation and configure Route Object Validation on their networks.
 
 It will detail the steps to publish Route Origin Authorisations (ROAs) with the five Regional Internet Registries (APNIC, ARIN, RIPE NCC, LACNIC and AFRINIC) which is the most common method. It will also detail how to install, setup and configure Krill from NLnet Labs (https://nlnetlabs.nl/projects/routing/krill/) for the more advanced users who may wish to manage their own RPKI Certificate Authority.
 
