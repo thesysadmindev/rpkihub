@@ -1,0 +1,8 @@
+{
+  "label": "How-To Guides - Router Configurations",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This section shows how to enable ROV on routers using the Relying Party software that was installed during the Route Object Validation guides."
+  }
+}

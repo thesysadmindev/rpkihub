@@ -1,6 +1,6 @@
 {
-  "label": "Tutorials - Route Object Validation",
-  "position": 3,
+  "label": "How-To Guides - Route Object Validation",
+  "position": 2,
   "link": {
     "type": "generated-index",
     "description": "This section details how you would install and configure your Relying Party (RP) software for validation of ROAs."

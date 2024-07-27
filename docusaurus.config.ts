@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'RPKI Deployment Hub',
-  tagline: 'Secure your routes, deploy RPKI today, and navigate the digital highways with confidence!',
+  tagline: 'A broad guide on everything related to the deployment of RPKI across your network, from creating ROAs to building validators, router configurations, and more.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -81,6 +81,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      /*
       links: [
         {
           title: 'Docs',
@@ -91,7 +92,6 @@ const config: Config = {
             },
           ],
         },
-        /*
         {
           title: 'Community',
           items: [
@@ -109,7 +109,6 @@ const config: Config = {
             },
           ],
         },
-        */
         {
           title: 'More',
           items: [
@@ -120,6 +119,7 @@ const config: Config = {
           ],
         },
       ],
+      */
       copyright: `Released under the GNU General Public License v3.0 ${new Date().getFullYear()} Christopher Hawker. Built with Docusaurus.`,
     },
     prism: {
