@@ -4,7 +4,7 @@ rpkihub.au is a site designed to help network operators deploy Route Origin Auth
 
 It will detail the steps to publish Route Origin Authorisations (ROAs) with the five Regional Internet Registries (APNIC, ARIN, RIPE NCC, LACNIC and AFRINIC) which is the most common method. It will also detail how to install, setup and configure Krill from NLnet Labs (https://nlnetlabs.nl/projects/routing/krill/) for the more advanced users who may wish to manage their own RPKI Certificate Authority.
 
-The site will also go into detail about configuring Route Object Validation (ROV) on your BGP sessions to validate ROAs using Relying Party (RP) software. This component is important as it enables you to only accept (or set a lower preference on the) routes for which the origin Autonomous System Number (ASN) has been authorised.
+The site will also go into detail about configuring Route Object Validation (ROV) on your BGP sessions to validate ROAs using Relying Party (RP) software. This component is important as it enables you to either reject or set a lower preference on the routes for which the origin Autonomous System Number (ASN) has not been authorised.
 
 Eventually, I will also go into detail on how to install and configure RPKI Relying Party (RP) software for your network to use to validate ROAs.
 
