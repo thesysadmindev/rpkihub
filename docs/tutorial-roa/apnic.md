@@ -82,6 +82,32 @@ Go to the web URL for preferred route validator. For the purpose of this guide, 
 📷 Figure: NLnet Labs' Routinator UI.
 </center>
 
+It is technically possible for multiple ROAs to exist, so it is worthwhile confirming that the ROA found is the one you just created. Another way to confirm this is by using the following commands (substituting the prefix for your own). The first command gets the information from the JSON file, and the second converts it from a POSIX timestamp into a human-readable UTC timestamp. The value you want to check is the `signing_time`.
+
+```
+curl --compressed -s https://console.rpki-client.org/dump.json | grepcidr3 -D 2001:67c:208c::/48 | jq 'select(.type == "roa")'
+date -r 1708017766
+```
+
+<center>
+![Output of the JSON dump from the RPKI Client Console on OpenBSD](/img/rpkiclient_curl_openbsd.png)
+
+📷 Figure: Output of the JSON dump from the RPKI Client Console on OpenBSD (Source: Job Snijders, received 29/07/2024)
+</center>
+
+The commands for Debian-based systems are fairly similar:
+
+```
+curl --compressed -s https://console.rpki-client.org/dump.json | grepcidr 2001:67c:208c::/48 | jq 'select(.type == "roa")'
+date --date='@1722155029'
+```
+
+<center>
+![Output of the JSON dump from the RPKI Client Console on Ubuntu](/img/rpkiclient_curl_ubuntu.png)
+
+📷 Figure: Output of the JSON dump from the RPKI Client Console on Ubuntu
+</center>
+
 ## Conclusion
 
 You have successfully created your first ROA, and taken an important step towards securing your internet number resources. This process will ensure that any network operators who have implemented ROV across their network will either reject your route if it is advertised from an AS that is not authorised, or give it a lower preference, at their discretion.
